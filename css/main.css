@@ -137,8 +137,6 @@ header nav ul li a {
 }
 
 .section-one {
-	border-top: 5px solid #EEE;
-	border-bottom: 5px solid #EEE;
 	width: 100%;
 	/* width: 29%; - desktop layout property  */
 
@@ -152,8 +150,6 @@ header nav ul li a {
 }
 
 .section-three {
-	border-top: 5px solid #EEE;
-	border-bottom: 5px solid #EEE;
 	width: 100%;
 	/*  width: 29%;  */
 }
@@ -186,5 +182,64 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875rem;
-	/*  font-size: 14px;  */
 }
+
+/***** TABLET Media Query *****/
+@media all and (min-width: 768px) {
+
+/***** Bottom Section *****/
+	
+.bottom-section .content-wrapper {
+	justify-content: space-evenly;
+}
+	
+.section-one {
+	width: 30%;
+}
+	
+.section-two {
+
+	border-left: 5px solid #EEE;	
+	border-right: 5px solid #EEE;	
+	border-top: none;
+	border-bottom: none;
+	padding: 5px;
+	width: 30%;
+	
+}
+
+.section-three {
+	width: 30%;
+	/*  width: 29%;  */
+}
+}
+/***** Desktop Media Query *****/
+@media all and (min-width: 1200px) {
+	body {
+		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+		font-size: 1em;
+		color: #000000;
+	}
+header .content-wrapper{
+	    justify-content: space-between;
+        align-items: center;
+		padding:20px;
+	}
+	
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+
+    }
+	header nav {
+	    width: 21%;
+	}
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+	 
